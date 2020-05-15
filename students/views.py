@@ -15,7 +15,8 @@ from datetime import datetime
 from flask import Flask
 from flask import request
 from flask import abort
-from linebot.models import *
+from linebot.models import 
+from hotelapi.models import users*
 logger = logging.getLogger("django")
 
 """
