@@ -18,7 +18,7 @@ from django.urls import path
 from django.conf.urls import url
 from studentsapp import views
 from django.urls import include
-#from test2api import views as v2
+from hotelapi import views as v2
 from func1api import views as v3
 
 urlpatterns = [
@@ -33,7 +33,7 @@ urlpatterns = [
     url(r'^hotel/(\w+)/$',views.hotel),
     url(r'^hello3/(\w+)/$',views.hello3),
     url(r'^callback/', include(('studentsapp.urls', 'studentsapp'), namespace='callback')),
-  #  url(r'^callback', v2.callback),
+    url(r'^callback', v2.callback),
     url(r'^callback', v3.callback),
 ]
 
