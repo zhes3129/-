@@ -30,6 +30,7 @@ urlpatterns = [
     url(r'^modify/$', views.modify),
     url(r'^delete/$', views.delete),
     url(r'^index/(\w+)/$',views.index),
+    url(r'^hotel/(\w+)/$',views.hotel),
     url(r'^hello3/(\w+)/$',views.hello3),
     url(r'^callback/', include(('studentsapp.urls', 'studentsapp'), namespace='callback')),
   #  url(r'^callback', v2.callback),
